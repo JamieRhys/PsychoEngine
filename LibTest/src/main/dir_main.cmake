@@ -1,0 +1,1 @@
+set(SRCS_TEST ${CMAKE_CURRENT_LIST_DIR}/TestMain.cpp)
