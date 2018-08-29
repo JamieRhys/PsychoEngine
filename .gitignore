@@ -33,4 +33,5 @@
 
 # Directories
 /PsychoEngineCore/includes/config/
+/PsychoEngineCore/includes/engine/api/
 /ThirdParty/src
