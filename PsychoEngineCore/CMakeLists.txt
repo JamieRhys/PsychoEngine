@@ -10,9 +10,11 @@ set(PROJ_LIB ${PROJ_LIB})
 include(${CMAKE_CURRENT_SOURCE_DIR}/src/dir_src.cmake)
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/includes
-        ${INCS_CXX}
         ${EASYLOGGINGPP_INCLUDE_DIR}
+        ${INCS_CXX}
 )
+
+set(PROJ_LIB ${PROJ_LIB} ${EASYLOGGINGPP_LIBRARY})
 
 if(LIB_TYPE MATCHES STATIC)
     if(UNIX AND NOT APPLE)
@@ -28,7 +30,10 @@ else()
 endif(LIB_TYPE MATCHES STATIC)
 
 include(GenerateExportHeader)
-add_library(${FINAL_PROJECT_NAME} ${LIB_TYPE} ${SRCS_CXX})
+add_library(${FINAL_PROJECT_NAME}
+        ${LIB_TYPE}
+        ${SRCS_CXX}
+        ${EASYLOGGINGPP_INCLUDE_DIR}/easylogging++.cc)
 target_link_libraries(${FINAL_PROJECT_NAME} ${PROJ_LIB})
 generate_export_header(
         ${FINAL_PROJECT_NAME}

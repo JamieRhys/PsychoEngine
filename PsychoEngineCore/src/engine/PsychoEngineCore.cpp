@@ -3,12 +3,17 @@
 //
 
 #include "engine/PsychoEngineCore.hpp"
+#include "utils/initLogging.hpp"
 #include <iostream>
 
 namespace pe { namespace engine {
 /*
  * Public Functions
  */
+    PsychoEngineCore::PsychoEngineCore(const std::string& windowTitle) :
+    m_windowTitle(windowTitle) {
+        pe::utils::create_log_config();
+    }
 
 /*
  * Private Functions

@@ -6,6 +6,7 @@
 #include <iostream>
 
 int main() {
+    pe::engine::PsychoEngineCore engine("Hello World!");
 
     return 0;
 }
