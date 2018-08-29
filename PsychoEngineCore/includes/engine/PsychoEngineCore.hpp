@@ -8,7 +8,20 @@
 #include "engine/api/PsychoEngineExport.hpp"
 
 namespace pe { namespace engine {
+    class PsychoEngineCore {
+    private:
 
+    public:
+        PE_API PsychoEngineCore()                      = default;
+    private:
+        bool preInit();
+        bool init();
+        bool postInit();
+        void gameLoop();
+        void update();
+        void render();
+        void cleanup();
+    };
 }} // namespace pe | namespace engine
 
 #endif //PSYCHOENGINE_PSYCHOENGINECORE_HPP

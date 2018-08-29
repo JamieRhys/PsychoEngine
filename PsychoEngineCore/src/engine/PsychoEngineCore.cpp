@@ -5,6 +5,39 @@
 #include "engine/PsychoEngineCore.hpp"
 #include <iostream>
 
-void hello() {
-    std::cout << "Hello World!" << std::endl;
-}
+namespace pe { namespace engine {
+/*
+ * Public Functions
+ */
+
+/*
+ * Private Functions
+ */
+    bool PsychoEngineCore::preInit() {
+
+    }
+
+    bool PsychoEngineCore::init() {
+
+    }
+
+    bool PsychoEngineCore::postInit() {
+
+    }
+
+    void PsychoEngineCore::gameLoop() {
+
+    }
+
+    void PsychoEngineCore::update() {
+
+    }
+
+    void PsychoEngineCore::render() {
+
+    }
+
+    void PsychoEngineCore::cleanup() {
+
+    }
+}} // namespace pe | namespace engine
