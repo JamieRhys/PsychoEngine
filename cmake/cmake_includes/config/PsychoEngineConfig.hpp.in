@@ -4,6 +4,7 @@
 namespace pe { namespace config {
 #define PE_VERSION_MAJOR @PsychoEngine_VERSION_MAJOR@
 #define PE_VERSION_MINOR @PsychoEngine_VERSION_MINOR@
+#define PE_VERSION_FULL @PsychoEngine_VERSION_MAJOR@.@PsychoEngine_VERSION_MINOR@
 }} // namespace pe | namespace config
 
 #endif // CONFIG_PSYCHOENGINECONFIG_HPP

@@ -1,6 +1,0 @@
-Name: easyloggingpp
-Description: Feature-rich single header C++ logging library
-Version: 9.96.4
-prefix=D:\Documents\Programming\cpp\PsychoEngine\ThirdParty\easyloggingpp\9.96.4
-includedir=D:\Documents\Programming\cpp\PsychoEngine\ThirdParty\easyloggingpp\9.96.4/include
-Cflags: -I${includedir}
